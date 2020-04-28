@@ -1,0 +1,151 @@
+*{
+   box-sizing: border-box; 
+}
+
+body {
+    background: #7fffd4;
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+  
+  
+  p {
+    color: #524c56;
+    line-height: 155%;
+    padding: 1%;
+    text-indent: 2%;
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #524c56;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  
+  a {
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #c3d7df;
+  }
+
+  .content {
+      max-width: 1170px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.5em;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 3em;
+
+  }
+
+  .logo span {
+      color: #b70e21;
+  }
+
+  .contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(9, 58, 54, 0.562)
+  }
+
+  .contact-wrapper > * {
+      padding: 1em;
+  }
+  .contact-form {
+      background-color: #7fffd4;
+  }
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #b70e21;
+    outline: none;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    color: #ffffff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+.contact-form form button:hover ,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #ffffff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: none;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+    /* LARGE SCREEN */
+    @media (min-width: 700px)  {
+        body {
+            padding: 0 4rem;
+        }
+        
+        .contact-wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .contact-wrapper > * {
+            padding: 2em;
+        }
+
+        .contact-info h4,
+        .contact-info ul,
+        .contact-info p {
+            padding: 1em;
+            text-align: center;
+            list-style: none;
+        }
+    }
